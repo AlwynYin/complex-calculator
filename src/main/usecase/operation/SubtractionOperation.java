@@ -1,8 +1,6 @@
 package usecase.operation;
 
 import entity.ComplexNumber;
-import usecase.operation.ComplexNumberOperation;
-
 public class SubtractionOperation implements ComplexNumberOperation {
     @Override
     public ComplexNumber perform(ComplexNumber num1, ComplexNumber num2) {

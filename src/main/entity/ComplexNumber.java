@@ -3,8 +3,8 @@ package entity;
 import java.util.Objects;
 
 public class ComplexNumber {
-    private double real;
-    private double imaginary;
+    private final double real;
+    private final double imaginary;
 
     /**
      * Constructs a ComplexNumber object with the given real and imaginary parts.

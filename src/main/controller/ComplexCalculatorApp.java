@@ -1,7 +1,5 @@
 package controller;
 
-import java.util.Scanner;
-
 import entity.ComplexNumber;
 import entity.TreeNode;
 import usecase.operation.*;
@@ -95,14 +93,6 @@ public class ComplexCalculatorApp {
 
         ComplexNumber leftValue = evaluateExpressionTree(root.left);
         ComplexNumber rightValue = evaluateExpressionTree(root.right);
-
-        if (root.value.equals("^")) {
-            if (rightValue.getImaginary() != 0) {
-                throw new IllegalArgumentException("Exponent must be a real number.");
-            }
-            ComplexNumberOperation operation = new ExponentiationOperation(rightValue.getReal());
-            return operation.perform(leftValue, rightValue);
-        }
 
         ComplexNumberOperation operation = OperationFactory.createOperation(root);
         return operation.perform(leftValue, rightValue);
