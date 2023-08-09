@@ -19,8 +19,8 @@ The Complex Calculator App employs the Strategy Design Pattern for handling diff
 
 ## Java Version and Testing Framework
 
-- Java version: Java 8 or higher
-- Testing framework: JUnit5 (for testing)
+- Java version: Java 11 (Amazon correcto-11)
+- Testing framework: JUnit5 (junit.jupiter:5.9.1)
 
 ## Code Quality
 
